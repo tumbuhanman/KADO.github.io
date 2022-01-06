@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KADO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-image">
+    <section>
+        <header>
+          <a href=""><img src="image/logo.png" class="logo" width="300" height="300" /></a>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">What's New</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </header>
+        <div class="content">
+          <div class="textbox">
+            <h2>Welcome To <br /><span> KADO!</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dolorem provident! Consectetur aut iure perspiciatis. Facere, nihil laborum aliquam at delectus nostrum sint sunt dolores, hic, odit dolorum laboriosam
+              voluptatibus?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="imgBox"><img src="image/thumb1.png" width="460" height="410" class="Mcdonald" /></div>
+        </div>
+
+        <ul class="thumb">
+          <li><img src="image/thumb1.png" width="100" height="100" onclick="imgSlider('image/thumb1.png');changeCircleColor('#FFFF00')" /></li>
+          <li><img src="image/thumb2.png" width="100" height="100" onclick="imgSlider('image/thumb2.png');changeCircleColor('#808000')" /></li>
+          <li><img src="image/thumb3.png" width="100" height="100" onclick="imgSlider('image/thumb3.png');changeCircleColor('#944949')" /></li>
+        </ul>
+        <ul class="sci">
+          <li>
+            <a href="https://www.facebook.com/kadocardshop"><img src="image/facebook.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="image/twitter.png" /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/kado.cardshop/"><img src="image/instagram.png" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- THIS IS IMPORTANT -->
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".Mcdonald").src = anything;
+      }
+    </script>
+  </body>
+</html>
